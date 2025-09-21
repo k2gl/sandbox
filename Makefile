@@ -40,6 +40,9 @@ ps: ## List containers
 up: ## Start the docker hub in detached mode (no logs)
 	@$(DOCKER_COMPOSE) up --detach
 
+run: ## Start the docker hub in attached mode (with logs)
+	@$(DOCKER_COMPOSE) up
+
 down: ## Stop the docker hub
 	@$(DOCKER_COMPOSE) down --remove-orphans
 

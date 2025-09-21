@@ -1,5 +1,5 @@
-event:
+common:
     resource:
-        path: ../src/Event/UI/API/
-        namespace: App\Event\UI\API
+        path: ../src/Controller
+        namespace: App\Controller
     type: attribute

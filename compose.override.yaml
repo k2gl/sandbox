@@ -28,5 +28,6 @@ services:
 ###> doctrine/doctrine-bundle ###
   database:
     ports:
-      - "5432"
+      - target: 5432
+        published: ${POSTGRES_PORT_OVERRIDE:-54990}
 ###< doctrine/doctrine-bundle ###
