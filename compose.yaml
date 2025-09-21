@@ -54,6 +54,18 @@ services:
       # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
       # - ./docker/db/data:/var/lib/postgresql/data:rw
 ###< doctrine/doctrine-bundle ###
+  
+  centrifugo:
+    build:
+      dockerfile: ./docker/centrifugo/Dockerfile
+      target: centrifugo_dev
+    ports:
+      - '8000:8000'
+    ulimits:
+      nofile:
+        soft: 65535
+        hard: 65535
+    command: centrifugo --admin.enabled --admin.external --admin.insecure --sse.enabled  --swagger.enabled
 
 volumes:
   caddy_data:

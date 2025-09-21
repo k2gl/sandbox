@@ -1,0 +1,26 @@
+{
+  "token_hmac_secret_key": "your-secret-here",
+  "admin_password": "strong-password",
+  "admin_secret": "admin-secret",
+  "api_key": "secret-api-key",
+
+  "channels": [
+    {
+      "name": "news",
+      "publish": true,
+      "subscribe": true,
+      "history_size": 100,
+      "history_ttl": "5m"
+    },
+    {
+      "name": "user:$user",
+      "subscribe": true,
+      "publish": false
+    },
+    {
+      "name": "chat:room-#rooms",
+      "presence": true,
+      "join_leave": true
+    }
+  ]
+}

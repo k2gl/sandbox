@@ -14,3 +14,5 @@
 ## [Прочее](/#other):
 ln bin/console bin/c
 ln bin/phpunit bin/t
+fish_add_path /home/l0gic/.bun/bin/                                                                                                                                                                                                                                    ✘ 1  15:35:14
+
