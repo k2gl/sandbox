@@ -1,0 +1,6 @@
+doctrine_migrations:
+    custom_template: '%kernel.project_dir%/migrations/MigrationTemplate.tpl'
+    organize_migrations: 'BY_YEAR_AND_MONTH'
+    migrations_paths:
+        'DoctrineMigrations': '%kernel.project_dir%/migrations'
+    enable_profiler: false
